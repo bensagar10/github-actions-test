@@ -7,6 +7,12 @@ on:
       - 'feature/*' #matches feature/
       #doesn't match feature/feat/a
       - 'feature/**' #matches feature/feat/a
+      - '!feature/featC'
+    tags:
+      - v1.*
+    paths:
+      - '**.js'
+
   # repository_dispatch:
   #   types: [build]
   # push:
